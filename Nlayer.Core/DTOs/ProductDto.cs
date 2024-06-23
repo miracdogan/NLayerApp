@@ -4,15 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Nlayer.Core
+namespace Nlayer.Core.DTOs
 {
-    public class Product:BaseEntity
+    //Client'in gormemesi icin her seyi eklemiyoruz. Peki nasil calisiyor?
+    internal class ProductDto:BaseDto
     {
         public string? Name { get; set; }
         public int Stock { get; set; }
         public decimal Price { get; set; }
         public int CategoryId { get; set; }
-        public Category? Category { get; set; }
-        public  ProductFeature? ProductFeature { get; set; }
     }
 }
