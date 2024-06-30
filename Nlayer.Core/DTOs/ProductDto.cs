@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Nlayer.Core.DTOs
 {
     //Client'in gormemesi icin her seyi eklemiyoruz. Peki nasil calisiyor?
-    internal class ProductDto:BaseDto
+    public class ProductDto:BaseDto
     {
         public string? Name { get; set; }
         public int Stock { get; set; }
